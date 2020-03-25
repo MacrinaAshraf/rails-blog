@@ -1,5 +1,3 @@
-<%#= form_tag (method: post) %>
-<%#= text_field_tag('title', placeholder: 'Title...') %>
 <%= form_with(url: new_post_path, method: "post") do %>
   <div class="form-group">
     <%= text_field_tag("title", nil, placeholder: "Title....." , class: "form-control") %>
