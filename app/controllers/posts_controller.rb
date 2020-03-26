@@ -1,10 +1,10 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    @posts = Post.all.order(:created_at).reverse_order
   end
 
   def show
-    @post = Post.find(params[:id])
+    return @post = Post.find(params[:id]), @post.comments
   end
 
   def new

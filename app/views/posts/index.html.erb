@@ -3,6 +3,7 @@
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"><%= post.title %></h5>
+      <p><%= post.updated_at %></p>
       <%= link_to :Show, post, action: "show", class: "btn btn-primary" %>
       <%= link_to :Edit, edit_post_path(post), class: "btn btn-warning" %>
       <%= link_to :Delete, post, method: :delete, class: "btn btn-danger" %>
