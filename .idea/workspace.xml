@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e86353b-f435-4c89-974e-6cfeb76350a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/posts/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/posts/_errors.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/posts/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/posts/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/post.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +155,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585138348896</updated>
-      <workItem from="1585138353949" duration="2899000" />
+      <workItem from="1585138353949" duration="4650000" />
+      <workItem from="1585149166153" duration="1747000" />
+      <workItem from="1585220228463" duration="10709000" />
     </task>
     <servers />
   </component>
@@ -155,13 +165,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="590" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585220749314">
+      <screen x="71" y="27" width="1849" height="1053" />
+    </state>
+    <state x="590" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/71.27.1849.1053@71.27.1849.1053" timestamp="1585220749314" />
     <state x="655" y="357" width="671" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585138719483">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
     <state x="655" y="357" width="671" height="390" key="#com.intellij.fileTypes.FileTypeChooser/71.27.1849.1053@71.27.1849.1053" timestamp="1585138719483" />
-    <state x="658" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1585139443176">
+    <state x="658" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1585221019310">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state x="658" y="257" width="672" height="678" key="search.everywhere.popup/71.27.1849.1053@71.27.1849.1053" timestamp="1585139443176" />
+    <state x="658" y="257" width="672" height="678" key="search.everywhere.popup/71.27.1849.1053@71.27.1849.1053" timestamp="1585221019310" />
   </component>
 </project>

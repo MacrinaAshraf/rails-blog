@@ -1,9 +1,2 @@
-<%= form_with(url: new_post_path, method: "post") do %>
-  <div class="form-group">
-    <%= text_field_tag("title", nil, placeholder: "Title....." , class: "form-control") %>
-  </div>
-  <div class="form-group">
-    <%= text_area_tag("content", nil, placeholder: "Content....." , rows: 5, class: "form-control") %>
-  </div>
-  <%= submit_tag("Post", class: "btn btn-primary") %>
-<% end %>
+<%= render partial: 'errors' %>
+<%= render partial: 'form', locals: {:url => 'create', :method_name => "post", :btn_name => "Post", :btn_color => "primary"} %>
