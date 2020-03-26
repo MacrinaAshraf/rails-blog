@@ -4,6 +4,6 @@ class Post < ApplicationRecord
   validates :title, :content, presence: true
   validates :title, uniqueness: true, length: { maximum: 50 }
 
-  has_many :comments, :dependent => :delete_all
+  has_many :comments, dependent: :delete_all
 
 end
