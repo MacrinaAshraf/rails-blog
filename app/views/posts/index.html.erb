@@ -4,9 +4,13 @@
     <div class="card-body">
       <h5 class="card-title"><%= post.title %></h5>
       <p><%= post.updated_at %></p>
-      <%= link_to :Show, post, action: "show", class: "btn btn-primary" %>
-      <%= link_to :Edit, edit_post_path(post), class: "btn btn-warning" %>
-      <%= link_to :Delete, post, method: :delete, class: "btn btn-danger" %>
+      <% if post_belong_to_current_user(post) %>
+        <%= link_to :Show, post, action: "show", class: "btn btn-primary" %>
+        <%= link_to :Edit, edit_post_path(post), class: "btn btn-warning" %>
+        <%= link_to :Delete, post, method: :delete, class: "btn btn-danger" %>
+      <% else %>
+        <%= link_to :Show, post, action: "show", class: "btn btn-primary" %>
+      <% end %>
     </div>
   </div>
 <% end %>

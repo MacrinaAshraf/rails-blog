@@ -1,0 +1,18 @@
+<br>
+<h1>Register</h1>
+
+<%=render 'errors' %>
+
+<br>
+<%=form_tag signup_path, method: :post do %>
+  <div class="form-group">
+    <%= text_field_tag(:name, nil, placeholder: :Username, class: "form-control") %>
+  </div>
+  <div class="form-group">
+    <%= password_field_tag(:password, nil, placeholder: "Password", class: "form-control") %>
+  </div>
+  <div class="form-group">
+    <%= password_field_tag(:password_confirmation, nil, placeholder: "Confirm Password", class: "form-control") %>
+  </div>
+  <%= submit_tag(:Register, class: "btn btn-success") %>
+<% end %>

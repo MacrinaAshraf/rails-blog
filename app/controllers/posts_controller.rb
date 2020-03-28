@@ -4,6 +4,7 @@ class PostsController < ApplicationController
   end
 
   def show
+    p " Session id = #{session[:id]}"
     return @post = Post.find(params[:id]), @post.comments
   end
 
@@ -12,7 +13,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.create(post_params)
+    @post = current_user.posts.create(post_params)
     if @post.persisted?
       redirect_to :root
     else

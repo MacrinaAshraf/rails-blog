@@ -1,9 +1,10 @@
 <br>
 <div class="card">
   <div class="card-header">
-    <%= @post.title %>
+    <h5><%= post_current_user_name(@post) %></h5>
   </div>
   <div class="card-body">
+    <h4><%= @post.title %></h4>
     <p class="card-text"><%= @post.content %></p>
   </div>
 </div>
@@ -18,21 +19,18 @@
   <%= submit_tag("Post Comment", class: "btn btn-primary") %>
 <% end %>
 
-<!--<form action="/comments" method="post" classs="new_comment" id="new_comment" accept-charset="UTF-8">-->
-<!--  <div class="form-group">-->
-<!--    <textarea class="form-control rows" name="content" placeholder="Post a comment ..."></textarea>-->
-<!--  </div>-->
-<!--  <input value="Post" type="submit" class="btn btn-primary">-->
-<!--</form>-->
-
 <br>
 <h3>All Comments</h3>
 <% if @post.comments.any? %>
   <% @post.comments.each do |comment| %>
+    <br>
     <div class="card w-50">
       <div class="card-body">
+        <h5><%= comment_current_user(comment) %></h5>
         <p class="card-text"><%= comment.content %></p>
-        <%= link_to :Delete, comment, method: :delete, class: "btn btn-danger" %>
+        <% if comment_belong_to_current_user(comment) %>
+          <%= link_to :Delete, comment, method: :delete, class: "btn btn-danger" %>
+        <% end %>
       </div>
     </div>
   <% end %>
